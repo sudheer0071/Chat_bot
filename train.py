@@ -1,12 +1,16 @@
 
 
 import json
-from nltk_utls import tokenize, stem, bag_of_words  # all required function for nltk is created in this file 
 import numpy as np
+
+from nltk_utls import tokenize, stem, bag_of_words  # all required function for nltk is created in this file 
 
 import torch 
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+
+from model import NeuralNet
+
 
 
 with open('intents.json', 'r') as f:
@@ -31,16 +35,15 @@ ignore_words = ['?','!',',','.']
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 all_words = sorted(set(all_words))
 tags = sorted(set(tags))
-
 X_train = []
 y_train = []
 
 
-for (tokenised_sentence, tags) in xy:
+for (tokenised_sentence, tag) in xy:
      bag  = bag_of_words(tokenised_sentence, all_words)
      X_train.append(bag)
      
-     label = tags.index(tags)                # indexing the tags
+     label = tags.index(tag)                # indexing the tags
      y_train.append(label)
      
 X_train = np.array(X_train)
@@ -57,12 +60,52 @@ class ChatDataset(Dataset):
      
      def __len__(self):
           return self.n_samples
-     
+
+# creating hyperparameters
 batch_size = 8
+hidden_size = 8
+output_size = len(tags)
+input_size =len(X_train[0])
+learning_rate = 0.001
+num_epochs = 2000
+
+
      
 dataset = ChatDataset()
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, num_workers=8)
-print(train_loader)
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle = True, num_workers=0)
+
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+model = NeuralNet(input_size,hidden_size, output_size).to(device)
+
+
+# loss and optimizer
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
+for i in range(num_epochs):
+     for (words, labels) in train_loader:
+          words = words.to(device)
+          labels = labels.to(device)
+          
+          #forward training
+          outputs = model(words)
+          loss = criterion(outputs, labels)
+          
+          # backword and optimizer step
+          optimizer.zero_grad()
+          loss.backward()
+          optimizer.step()
+          
+     if (i + 1) % 100 == 0:
+          print(f'epoch {i + 1}/{num_epochs}, loss = {loss.item():.4f}')
+          
+print(f'final loss ,loss = {loss.item():.4f}')
+
+          
+          
+          
+
 
 
      
