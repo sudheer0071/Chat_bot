@@ -2,7 +2,6 @@
 
 import json
 from nltk_utls import tokenize, stem, bag_of_words
-from usermessage import info
 
 
 
