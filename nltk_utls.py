@@ -24,12 +24,6 @@ def bag_of_words(token_sent,all_words):
 
 
 
-## testing the function
-sentence = ["hello","how"," are","you"]
-words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
-print(bag_of_words(sentence, words))
-
-
      
 
 
