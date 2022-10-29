@@ -30,11 +30,11 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = ""
-print("{ tyoe 'quit' to EXIT }\n \n Hello..! ")
+print("{ tyoe 'qt' to EXIT }\n \n Hello..! ")
 
 while True:
      sentence = input("==>> ")
-     if sentence == "quit":
+     if sentence == "qt":
           break
      
      
