@@ -103,7 +103,7 @@ for i in range(num_epochs):
 print(f'final loss ,loss = {loss.item():.4f}')
 
           
-print("Conforming update")
+print("Program Sucessfully updated")
 
           
 
