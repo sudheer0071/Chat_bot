@@ -2,6 +2,7 @@
 
 import json
 import numpy as np
+import time as tm
 
 from nltk_utls import tokenize, stem, bag_of_words  # all required function for nltk is created in this file 
 
@@ -11,7 +12,12 @@ from torch.utils.data import Dataset, DataLoader
 
 from model import NeuralNet
 
-
+def info():
+     syn = f"Training ~COMPLETED~ \n The data is loaded in {FILE}\n"
+     for i in syn:
+          print(i,end="")
+          tm.sleep(0.035)
+          
 
 with open('intents.json', 'r') as f:
      intents = json.load(f)
@@ -103,7 +109,19 @@ for i in range(num_epochs):
 print(f'final loss ,loss = {loss.item():.4f}')
 
           
-print("Program Sucessfully updated")
+data = {
+     "model_state" : model.state_dict(),
+     "input_size" : input_size,
+     "output_size" : output_size,
+     "hidden_size" : hidden_size,
+     "all_words" : all_words,
+     "tags" : tags
+}
+
+FILE = "data.pth"
+torch.save(data,FILE)
+
+info()
 
           
 
