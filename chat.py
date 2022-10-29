@@ -55,6 +55,6 @@ while True:
                if tag == intent["tag"]:
                     print((str(bot_name))+ ": " + str(random.choice(intent["responses"])))
      else:
-          print(f"{bot_name} : XXXXXXXXXXX\n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x\n   i am sorry its out of my understanding for now.. \n Hold tight..!! \n Our developers are working hard to bring this feature..\n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x \n ")
+          print(f"{bot_name} : \n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x\n   i am sorry its out of my understanding for now.. \n Hold tight..!! \n Our developers are working hard to bring this feature..\n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x \n ")
           
           
