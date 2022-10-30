@@ -20,9 +20,9 @@
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
+        "See you later",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye!."
       ]
     },
     {
@@ -33,7 +33,8 @@
     {
       "tag": "function",
       "patterns": [
-        "Why are you programmed for ?"
+        "Why are you programmed for ?",
+        "What can you do?"
       ],
       "responses": [
         "I can help interact with people to solve problems ",
@@ -41,30 +42,34 @@
       ]
     },
     {
-      "tag": "payments",
+      "tag": "swearing",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "fuck off",
+        "fuck",
+        "twat",
+        "shit"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "Please do not swear",
+        "How rude",
+        "That is not very nice"
       ]
     },
     {
-      "tag": "swearing",
+      "tag": "time",
       "patterns": [
-         "you are bad",
-         "I do not like you",
-         "I hate you",
-         "you are dumb"
+        "What is the time?",
+        "What's the time?",
+        "Do you know what time it is?",
+        "Do you know the time?",
+        "Can you tell me the time?",
+        "Tell me what time it is?",
+        "Time"
       ],
       "responses": [
-         "Please do not swear",
-         "How rude",
-         "That is not very nice"
+        "The time is %%TIME%%",
+        "Right now it is %%TIME%%",
+        "It is around %%TIME%%"
       ]
     },
     {
@@ -72,7 +77,8 @@
       "patterns": [
         "Cheer me up!",
         "Tell me something funny!",
-        "Make me happy"
+        "Make me happy",
+        "Tell me jokes!"
       ],
       "responses": [
        "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
@@ -218,6 +224,43 @@
        "I went in to a pet shop. I said, 'Can I buy a goldfish?' The guy said, 'Do you want an aquarium?' I said, 'I don't care what star sign it is.'",
        "My mate Sid was a victim of I.D. theft. Now we just call him S.",
        "David Hasselhoff walks into a bar and says to the barman, 'I want you to call me David Hoff'.  The barman replies 'Sure thing Dave... no hassle'"
+      ]
+    },
+    {
+      "tag": "CourtesyGreeting",
+      "patterns": [
+            "How are you?",
+            "Hi how are you?",
+            "Hello how are you?",
+            "Hola how are you?",
+            "How are you doing?",
+            "Hope you are doing well?",
+            "Hello hope you are doing well?"
+      ],
+      "responses": [
+            "Hello, I am great, how are you?",
+            "Hello, how are you? I am great thanks!",
+            "Hello, I am good thank you, how are you?",
+            "Hi, I am great, how are you?",
+            "Hi, how are you? I am great thanks!",
+            "Hi, I am good thank you, how are you?",
+            "Hi, good thank you, how are you?"
+      ]
+    },
+    {
+      "tag": "NameQuery",
+      "patterns": [
+            "What is your name?",
+            "What could I call you?",
+            "What can I call you?",
+            "What do your friends call you?",
+            "Who are you?",
+            "Tell me your name?"
+      ],
+      "responses": [
+            "You can call me juan",
+            "You may call me juan",
+            "Call me juan"
       ]
     }
   ]

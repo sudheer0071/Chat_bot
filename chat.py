@@ -3,10 +3,18 @@ from ast import Pass
 import random
 import json
 from turtle import clear
+import time as tm
 import torch
 import random 
 from model import NeuralNet
 from nltk_utls import bag_of_words, tokenize
+
+
+def aniprint(a):
+     for i in a:
+          print(i,end="")
+          tm.sleep(random.uniform(0.001, 0.02))
+     
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -30,10 +38,10 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = ""
-print("{ tyoe 'qt' to EXIT }\n \n Hello..! ")
+aniprint("{ type 'qt' to EXIT }\n \nHello..!!, \nI am juan... \nYour new bot...\nLets chat..!! ")
 
 while True:
-     sentence = input("==>> ")
+     sentence = input("\n==>> ")
      if sentence == "qt":
           break
      
@@ -53,7 +61,7 @@ while True:
      if prob.item() > 0.75:
           for intent in intents["intents"]:
                if tag == intent["tag"]:
-                    print((str(bot_name))+ ": " + str(random.choice(intent["responses"])))
+                    aniprint((str(bot_name))+ ": " + str(random.choice(intent["responses"])))
      else:
           print(f"{bot_name} : \n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x\n   i am sorry its out of my understanding for now.. \n Hold tight..!! \n Our developers are working hard to bring this feature..\n x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x \n ")
           
