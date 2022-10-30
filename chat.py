@@ -38,7 +38,7 @@ model.load_state_dict(model_state)
 model.eval()
 
 bot_name = ""
-aniprint("{ type 'qt' to EXIT }\n \nHello..!!, \nI am juan... \nYour new bot...\nLets chat..!! ")
+aniprint("{ type 'qt' to EXIT }\n \nHello..!!, \nI am juan \nYour new bot\nLets chat..!! ")
 
 while True:
      sentence = input("\n==>> ")

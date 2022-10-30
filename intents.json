@@ -37,8 +37,7 @@
         "What can you do?"
       ],
       "responses": [
-        "I can help interact with people to solve problems ",
-        "I can help provide information about things"
+        "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n"
       ]
     },
     {
