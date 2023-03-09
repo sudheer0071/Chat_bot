@@ -1,3 +1,4 @@
+
 {
   "intents": [
     {
@@ -11,18 +12,19 @@
         "Good day"
       ],
       "responses": [
-        "Hello :-)",
-        "What's up dude, ",
-        "Hi there, what can I do for you?"
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later",
+        "See you later, thanks for visiting",
         "Have a nice day",
-        "Bye!."
+        "Bye! Come back again soon."
       ]
     },
     {
@@ -31,44 +33,15 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "function",
+      "tag": "items",
       "patterns": [
-        "Why are you programmed for ?",
-        "What can you do?"
+        "Which items do you have?",
+        "What kinds of items are there?",
+        "What do you sell?"
       ],
       "responses": [
-        "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you.\n 3. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n"
-      ]
-    },
-    {
-      "tag": "swearing",
-      "patterns": [
-        "fuck off",
-        "fuck",
-        "twat",
-        "shit"
-      ],
-      "responses": [
-        "Please do not swear",
-        "How rude",
-        "That is not very nice"
-      ]
-    },
-    {
-      "tag": "time",
-      "patterns": [
-        "What is the time?",
-        "What's the time?",
-        "Do you know what time it is?",
-        "Do you know the time?",
-        "Can you tell me the time?",
-        "Tell me what time it is?",
-        "Time"
-      ],
-      "responses": [
-        "The time is %%TIME%%",
-        "Right now it is %%TIME%%",
-        "It is around %%TIME%%"
+        "We sell coffee and tea",
+        "We have coffee and tea"
       ]
     },
     {
@@ -223,43 +196,6 @@
        "I went in to a pet shop. I said, 'Can I buy a goldfish?' The guy said, 'Do you want an aquarium?' I said, 'I don't care what star sign it is.'",
        "My mate Sid was a victim of I.D. theft. Now we just call him S.",
        "David Hasselhoff walks into a bar and says to the barman, 'I want you to call me David Hoff'.  The barman replies 'Sure thing Dave... no hassle'"
-      ]
-    },
-    {
-      "tag": "CourtesyGreeting",
-      "patterns": [
-            "How are you?",
-            "Hi how are you?",
-            "Hello how are you?",
-            "Hola how are you?",
-            "How are you doing?",
-            "Hope you are doing well?",
-            "Hello hope you are doing well?"
-      ],
-      "responses": [
-            "Hello, I am great, how are you?",
-            "Hello, how are you? I am great thanks!",
-            "Hello, I am good thank you, how are you?",
-            "Hi, I am great, how are you?",
-            "Hi, how are you? I am great thanks!",
-            "Hi, I am good thank you, how are you?",
-            "Hi, good thank you, how are you?"
-      ]
-    },
-    {
-      "tag": "NameQuery",
-      "patterns": [
-            "What is your name?",
-            "What could I call you?",
-            "What can I call you?",
-            "What do your friends call you?",
-            "Who are you?",
-            "Tell me your name?"
-      ],
-      "responses": [
-            "You can call me juan",
-            "You may call me juan",
-            "Call me juan"
       ]
     }
   ]
