@@ -7,8 +7,9 @@ unique_movies = df['movie_name'].unique()
 print("Number of movies: ", len(unique_movies))
 print("Unique movies: ")
 print(unique_movies)
-
-
+print(df.describe())    
+print(df.info())
+print(df)
 
 
 # output =>

@@ -13,18 +13,26 @@
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
+        "Hello,",
         "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hi there, how can I help?",
+        "How u doing ( -joey )"
       ]
     },
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
+        "See you later",
         "Have a nice day",
-        "Bye! Come back again soon."
+        "Bye! Visit again."
+      ]
+    },
+    {
+      "tag":"horny",
+      "patterns":["talk dirty","horny"],
+      "responses":[
+        "What did the toaster say to the slice of bread? I want you inside me."
       ]
     },
     {
@@ -33,15 +41,26 @@
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
-      "tag": "items",
+      "tag": "products",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "review about iphones",
+        "review about apple products"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "They are great products for daily usage with great battery life and performance",
+        "They are premium products but comes with great battery life and performance"
+      ]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "tell me about yourself?",
+        "What can you do?",
+        "How can you help me?"
+      ],
+      "responses": [
+        "I am chatbot who can understand and provide a approate response!",
+        "Ola..! i am a bot which functions as recogniting Natural language and giving feedback.."
       ]
     },
     {

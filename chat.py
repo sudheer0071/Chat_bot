@@ -38,7 +38,7 @@ printani("\n\n\nHey,\nI am automa..\nlets chat...!!! ")
 while True:
     # sentence = "do you use credit cards?"
     sentence = input("\n\n -> ")
-    if sentence == "quit":
+    if sentence == "qt":
         break
 
     sentence = tokenize(sentence)
@@ -58,4 +58,6 @@ while True:
             if tag == intent["tag"]:
                 printani(f"{bot_name}: {random.choice(intent['responses'])}")
     else:
+        g = open("Patterns.txt","a")
+        g.write(str(sentence))
         printani(f"{bot_name}: I do not understand...")
