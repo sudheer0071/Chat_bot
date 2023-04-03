@@ -1,2 +1,3 @@
 # Chat_bot
-Creating a project to deplot a bot used for Machine learning using tensorflow
+Working on a project which will create a chatbot for providing information about a subject in a simpler text formate
+
