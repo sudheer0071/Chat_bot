@@ -54,7 +54,7 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = int(input("Enter the number of epochs to train : \n"))
+num_epochs = 2300
 
 batch_size = 8
 learning_rate = 0.001
@@ -114,6 +114,8 @@ for epoch in range(num_epochs):
 
 
 print(f'final loss: {loss.item():.4f}')
+
+
 
 data = {
 "model_state": model.state_dict(),
