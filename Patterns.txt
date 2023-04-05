@@ -1,4 +1,4 @@
 Here all the unreqonised requests is stored ......
 
 
-['what', 'do', 'you', 'think', 'about', 'iphones']
+['what', 'do', 'you', 'think', 'about', 'iphones']['clear']['python', '-u', '``', '/Users/yashsawkar/Desktop/Chat_bot/train.py', "''"]
