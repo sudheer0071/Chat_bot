@@ -20,7 +20,7 @@ data = torch.load(FILE)
 def printani(tt):
     for i in tt:
         print(i,end='')
-        # tm.sleep(rd.uniform(0.005,0.05))
+        tm.sleep(rd.uniform(0.0005,0.005))
 
 input_size = data["input_size"]
 hidden_size = data["hidden_size"]

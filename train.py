@@ -116,7 +116,6 @@ for epoch in range(num_epochs):
 print(f'final loss: {loss.item():.4f}')
 
 
-
 data = {
 "model_state": model.state_dict(),
 "input_size": input_size,
