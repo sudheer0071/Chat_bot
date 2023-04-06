@@ -29,8 +29,8 @@
       ]
     },
     {
-      "tag":"horny",
-      "patterns":["talk dirty","horny"],
+      "tag":"xd",
+      "patterns":["dirty joke"],
       "responses":[
         "What did the toaster say to the slice of bread? I want you inside me."
       ]
@@ -52,6 +52,16 @@
       ]
     },
     {
+      "tag": "definemachine",
+      "patterns": [
+        "Machine Learning",
+        "Artifical Intelligence"
+      ],
+      "responses": [
+        "Machine learning is a subfield of artificial intelligence that involves the development of algorithms and statistical models that enable computer systems to learn and improve from data without being explicitly programmed.In other words, machine learning algorithms allow computers to automatically identify patterns and relationships in data, and use that knowledge to make predictions or decisions about new data.Machine learning is used in a wide range of applications, including image recognition, speech recognition, natural language processing, recommendation systems, fraud detection, and many others. There are several types of machine learning algorithms, including supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning."
+      ]
+    },
+    {
       "tag": "items",
       "patterns": [
         "tell me about yourself?",
@@ -69,7 +79,7 @@
         "Cheer me up!",
         "Tell me something funny!",
         "Make me happy",
-        "Tell me jokes!"
+        "jokes!"
       ],
       "responses": [
        "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
